@@ -3,7 +3,7 @@
   = ui_component("place_title", properties: @app.page_title)
   = ui_component("navigation/secondary", properties: @app.secondary_nav_items)
 
-%script#tmpl-preloader{ type: 'text-mustache' }
+%script#tmpl-preloader{ type: 'text/html' }
   = ui_component('preloader')
 
 - configure_js("pageHopper", @app.page_hopper_sections)

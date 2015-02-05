@@ -31,6 +31,9 @@ define(function() {
     "sponsor-logo": [
       { browser: [ 0, 0 ], ad_sizes: [ 150, 120 ] }
     ],
+    "sponsor-logo-small": [
+      { browser: [ 0, 0 ], ad_sizes: [ 90, 90 ] }
+    ],
     "traffic-driver": [
       { browser: [ 0, 0 ], ad_sizes: [ 192, 380 ] }
     ],

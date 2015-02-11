@@ -180,6 +180,9 @@
     .card__content__context
       color: inherit
 
+    .card__content__title
+      +font-size(24)
+
 
 // -----------------------------------------------------------------------------
 // Single column list format
@@ -195,12 +198,14 @@
     padding: $card-list-format-padding
 
   .card__content__title
-    +font-size(18)
+    +font-size(16)
 
   .card__content__desc
     display: none
 
   .card__content__pin
+    position: absolute
+    right: $card-list-format-padding
     width: 15px
     height: 22px
 
@@ -226,13 +231,17 @@
     // Switch to a media block style layout
     &.card--list--short
 
+      $figure-width: aspect-ratio($card-list-format-width, $card-list-format-content-height)
+
       &.card--has-img,
       &.card--has-price
+
         .card__figure
-          right: 67.5%
+          right: 100% - $figure-width
 
         .card__content
-          left: 32.5%
+          left: $figure-width
+
 
 // -----------------------------------------------------------------------------
 // Multiple column format
@@ -298,11 +307,8 @@
             padding-bottom: 80px
 
       &.card--cover
-
-        .card__content__title
-          +font-size(24)
-
         &.card--double
+
           .card__content__title
             +font-size(28)
 

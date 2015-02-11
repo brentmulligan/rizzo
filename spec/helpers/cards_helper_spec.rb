@@ -13,7 +13,7 @@ describe CardsHelper do
 
     it "returns an array of structural class names for the given properties" do
       result = helper.card_classes(
-        list_tall?: true,
+        tall_listing?: true,
         double?: true,
         cover?: true,
         kind: "article"

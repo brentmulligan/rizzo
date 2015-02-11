@@ -3,9 +3,8 @@
 
   padding-top: aspect-ratio($card-list-format-width, $height)
 
-  @if not $short
-    &.card--cover
-      padding-top: aspect-ratio($card-list-format-width, $card-list-format-figure-height)
+  &.card--has-img.card--cover
+    padding-top: aspect-ratio($card-list-format-width, $card-list-format-figure-height)
 
 @mixin card-dimensions-column-format($span: 1, $short: false)
   $width: ($card-column-format-width * $span) + ($card-gutter * ($span - 1))

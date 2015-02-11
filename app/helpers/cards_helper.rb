@@ -7,7 +7,7 @@ module CardsHelper
       "card--#{props[:kind] || 'general'}",
       "card--#{props[:fixed?] ? 'fixed' : 'flexible'}",
       # Cards are short by default in list view
-      "card--list--#{props[:list_tall?] ? 'tall' : 'short'}",
+      "card--list--#{props[:tall_listing?] ? 'tall' : 'short'}",
       # Cards are tall by default in column view
       "card--column--#{props[:short?] ? 'short' : 'tall' }",
       "card--column--#{props[:double?] ? 'double' : 'single'}",

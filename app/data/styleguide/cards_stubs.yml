@@ -59,7 +59,7 @@
   :styleguide_title: "Guide card with image, context text and price tag"
   :url: "#"
   :kind: "guide"
-  :list_height: tall
+  :tall_listing?: true
   :context_text: "Book & Ebook"
   :title: "France's Best Trips"
   :description: "Discover the freedom of the open road with France’s Best Trips. We’ve selected 39 amazing road trips through France, from two-day escapes to week-long adventures, and packed them full of expert advice and inspirational suggestions. Whether you want to cruise the corniches of the French Riviera, get lost among the snowcapped Alps or taste your way around Champagne’s hallowed vineyards, we’ve got the trip for you."
@@ -73,13 +73,13 @@
 -
   :styleguide_title: "Short card"
   :url: "#"
-  :column_height: short
+  :short?: true
   :title: "Paris"
   :description: "Paris has all but exhausted the superlatives that can reasonably be applied to any city. Notre Dame and the Eiffel Tower have been described countless times, as have the Seine and the subtle (and not-so-subtle) differences between the Left and Right Banks. Yet, what writers have never been able to even slightly reflect is the grandness and magic."
 -
   :styleguide_title: "Short quote card with author"
   :url: "#"
-  :column_height: short
+  :short?: true
   :kind: "quote"
   :title: "Thorntree"
   :description: "It sounds like you don't know the rules for going to Bhutan."
@@ -88,7 +88,7 @@
 -
   :styleguide_title: "Short card with image and author"
   :url: "#"
-  :column_height: short
+  :short?: true
   :title: "Travel shopping"
   :description: ""
   :image_alt: ""
@@ -98,7 +98,7 @@
 -
   :styleguide_title: "Short card with image and image icon"
   :url: "#"
-  :column_height: short
+  :short?: true
   :title: "Kyoto"
   :description: ""
   :image_alt: ""
@@ -124,8 +124,7 @@
   :styleguide_title: "Double width card with cover image"
   :url: "#"
   :cover?: true
-  :list_height: tall
-  :column_width: double
+  :double?: true
   :title: "Top things to do in Paris"
   :image_alt: ""
   :image_url: "http://media.lonelyplanet.com/a/g/hi/t/d79818893c366ac9d63dd756a86cb968-best-places-to-stay-in-paris.jpg"

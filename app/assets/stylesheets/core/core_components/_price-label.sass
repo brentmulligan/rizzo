@@ -1,7 +1,7 @@
 .price-label
   @extend %rounded-corners
   margin-top: 10px
-  padding: 5px 10px 3px
+  padding: 5px 6px 3px
   font-weight: bold
   text-align: center
   letter-spacing: -0.015em
@@ -9,13 +9,22 @@
   background: $titlegray
   background: transparentize($titlegray, 0.2)
 
+  +respond-to(narrow-view)
+    padding-left: 10px
+    padding-right: 10px
+
 .price-label__currency
-  +font-size(15)
+  +font-size(12)
   position: relative
   top: -0.2em
 
+  +respond-to(narrow-view)
+    +font-size(15)
+
 .price-label__price
-  +font-size(20)
+  +font-size(16)
+  +respond-to(narrow-view)
+    +font-size(20)
 
 .price-label__decimal
   position: relative
